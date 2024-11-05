@@ -40,11 +40,11 @@ input_data = np.array([[gender, age, hypertension, heart_disease, bmi, HbA1c_lev
 if st.button('Predict'):
     prediction = model.predict(input_data)
     st.write("The estimated house price is: ")
-    st.write(prediction[0])
-    if prediction[0]>0.5:
-        st.write("yes")
-    if prediction[0]<0.5:
-        st.write("no")
+    # st.write(prediction[0])
+    # if prediction[0]>0.5:
+    #     st.write("yes")
+    # if prediction[0]<0.5:
+    #     st.write("no")
 
 # Footer or additional information
 st.write("""
